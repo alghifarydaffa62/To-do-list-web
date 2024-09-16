@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./main/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        '10': '2.5rem',
+        '12': '3rem',
+        '16': '4rem',
+      }
+    },
   },
   plugins: [],
 }
