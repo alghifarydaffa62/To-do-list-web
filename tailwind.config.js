@@ -7,7 +7,11 @@ module.exports = {
         '10': '2.5rem',
         '12': '3rem',
         '16': '4rem',
+      },
+      gap: {
+        '4': '2rem',
       }
+
     },
   },
   plugins: [],
