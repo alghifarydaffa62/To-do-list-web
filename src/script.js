@@ -14,13 +14,19 @@ function tugas() {
 
     const deskripsi = document.createElement("p")
     deskripsi.textContent = desc
-
+    deskripsi.id = "desc"
+    deskripsi.classList.add("break-words")
+    deskripsi.classList.add("overflow-y-auto")
+    
     const box = document.createElement("div")
     box.style.width = '25vw'
     box.style.height = '30vh'
     box.classList.add("bg-blue-950")
     box.classList.add("rounded-md")
     box.classList.add("p-6")
+    box.classList.add("flex")
+    box.classList.add("flex-col")
+    box.classList.add("gap-2")
 
     box.appendChild(matkul)
     box.appendChild(dl)
