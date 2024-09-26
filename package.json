@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx postcss src/style.css -o dist/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,9 +17,7 @@
     "url": "https://github.com/alghifarydaffa62/To-do-list-web/issues"
   },
   "homepage": "https://github.com/alghifarydaffa62/To-do-list-web#readme",
-  "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
+  "devDependencies": {
     "tailwindcss": "^3.4.13"
   }
 }
