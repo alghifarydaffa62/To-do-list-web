@@ -34,15 +34,29 @@ function createtugas(judul, deadline, desc) {
     const button = document.createElement("button")
     button.textContent = "Selesai"
     button.classList.add("p-1")
+    button.classList.add("w-2/4")
     button.classList.add("text-md")
     button.classList.add("font-semibold")
     button.classList.add("bg-slate-700")
     button.classList.add("rounded-md")
+    button.classList.add("float-left")
     button.classList.add("hover:bg-slate-800")
 
+    const button2 = document.createElement("button")
+    button2.textContent = "Hapus"
+    button2.classList.add("text-md")
+    button2.classList.add("font-semibold")
+    button2.classList.add("bg-slate-700")
+    button2.classList.add("rounded-md")
+    button2.classList.add("hover:bg-slate-800")
+    button2.onclick = function () {
+        box.classList.add("hidden")
+    }
+
     const box = document.createElement("div")
+    box.classList.add("box-border")
     box.style.width = '25vw'
-    box.style.height = '30vh'
+    // box.style.height = '35vh'
     box.classList.add("bg-blue-950")
     box.classList.add("rounded-md")
     box.classList.add("p-6")
@@ -54,7 +68,14 @@ function createtugas(judul, deadline, desc) {
     box.appendChild(dl)
     box.appendChild(deskripsi)
     box.appendChild(button)
-
+    box.appendChild(button2)
+    
+    // const buttoncontainer = document.createElement("div")
+    // buttoncontainer.classList.add("d-flex")
+    // buttoncontainer.classList.add("gap-2")
+    // buttoncontainer.appendChild(button)
+    // buttoncontainer.appendChild(button2)
+    
     const container = document.getElementById("container")
     container.appendChild(box)
 }
